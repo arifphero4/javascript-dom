@@ -15,3 +15,11 @@ getId.style.fontSize = "30px";
 
 const thirdTitle = document.getElementById("third-title");
 thirdTitle.style.color = "red";
+
+const blogs = document.getElementsByClassName("blog");
+for (const blog of blogs) {
+  blog.style.border = "2px solid orange";
+  blog.style.borderRadius = "15px";
+  blog.style.margin = "10px";
+  blog.style.padding = "15px";
+}
