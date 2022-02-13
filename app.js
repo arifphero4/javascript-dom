@@ -12,3 +12,6 @@ for (const p of blogDetails) {
 const getId = document.getElementById("second-title");
 getId.style.color = "green";
 getId.style.fontSize = "30px";
+
+const thirdTitle = document.getElementById("third-title");
+thirdTitle.style.color = "red";
