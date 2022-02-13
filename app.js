@@ -35,6 +35,7 @@ article.appendChild(p);
 // parent of child
 const blogSection = document.getElementById("blogs");
 blogSection.appendChild(article);
+console.log(article);
 
 // style at blog
 const blogs = document.getElementsByClassName("blog");
@@ -44,3 +45,18 @@ for (const blog of blogs) {
   blog.style.margin = "10px";
   blog.style.padding = "15px";
 }
+
+// creting my blog -6
+/* const article2 = document.createElement("article");
+article2.classList = "blog";
+const h4b = document.createElement("h4");
+h4.innerText = "my blog -6";
+const p2 = document.createElement("p");
+p.innerText =
+  "hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. hello there, this is my blog - 6. ";
+
+article2.appendChild(h4b);
+article2.appendChild(p2);
+
+const newBlog = document.getElementById("blogs");
+newBlog.appendChild(article2); */
