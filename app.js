@@ -16,6 +16,27 @@ getId.style.fontSize = "30px";
 const thirdTitle = document.getElementById("third-title");
 thirdTitle.style.color = "red";
 
+// querySelector/ querySelectorAll
+const querySelector = document.querySelector("#second-title");
+querySelector.style.color = "blue";
+console.log("this is second title");
+
+// append child
+const article = document.createElement("article");
+article.classList.add("blog");
+const h4 = document.createElement("h4");
+h4.innerText = "my blog-5";
+const p = document.createElement("p");
+p.innerText =
+  "my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. my name is khan. ";
+article.appendChild(h4);
+article.appendChild(p);
+
+// parent of child
+const blogSection = document.getElementById("blogs");
+blogSection.appendChild(article);
+
+// style at blog
 const blogs = document.getElementsByClassName("blog");
 for (const blog of blogs) {
   blog.style.border = "2px solid orange";
@@ -23,8 +44,3 @@ for (const blog of blogs) {
   blog.style.margin = "10px";
   blog.style.padding = "15px";
 }
-
-// querySelector/ querySelectorAll
-const querySelector = document.querySelector("#second-title");
-querySelector.style.color = "blue";
-console.log("this is second title");
