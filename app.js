@@ -23,3 +23,7 @@ for (const blog of blogs) {
   blog.style.margin = "10px";
   blog.style.padding = "15px";
 }
+
+// querySelector/ querySelectorAll
+const querySelector = document.querySelectorAll("#second-title");
+console.log("this is second title");
