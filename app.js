@@ -25,5 +25,6 @@ for (const blog of blogs) {
 }
 
 // querySelector/ querySelectorAll
-const querySelector = document.querySelectorAll("#second-title");
+const querySelector = document.querySelector("#second-title");
+querySelector.style.color = "blue";
 console.log("this is second title");
